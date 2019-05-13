@@ -12,13 +12,20 @@ except ImportError:
 
 class Service():
 
-    def __init__(self, _user, _pass, mode='cert'):
+    def __init__(self, user, password, mode='cert'):
         if mode == 'cert':
             self.base_uri = 'https://cert.netpay.com.mx/gateway-ecommerce'
         else:
             self.base_uri = 'http://209cdac2.ngrok.io'
         payload = self._build_login_request(_user, _pass)
+        
+
+
+    def get_jwt_token():
+        payload = self._build_login_request(_user, _pass)
         self.access_token = self._build_http_post_request('/v1/auth/login', 'post', payload)
+
+
 
     def _test(self):
         print(self.access_token);
