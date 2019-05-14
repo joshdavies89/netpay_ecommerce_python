@@ -43,7 +43,7 @@ class RiskManager(BaseResource):
     URL = "/gateway-ecommerce/v1/risk-manager/token-card"
 
 class StoreApiKey(BaseResource):
-    URL = "/gateway-ecommerce/v1/risk-manager/token-card"
+    URL = "/gateway-ecommerce/v1/store/store-api-key"
 
 class WebAuthorizer(BaseResource):
     URL = "/gateway-ecommerce/v2/checkout"
