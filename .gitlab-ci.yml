@@ -1,0 +1,11 @@
+test:
+  script:
+  - apt-get update -qy
+  - apt-get install -y python-dev python-pip
+  - pip install requests
+  - pip install --upgrade pip setuptools wheel
+  - pip install tqdm
+  - pip install --upgrade twine
+  - python setup.py bdist_wheel
+  - pip install dist/netpay_eccomerce_python-0.1-py2-none-any.whl
+  - python test.py
