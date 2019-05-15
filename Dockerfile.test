@@ -1,0 +1,17 @@
+FROM python:2.7.11
+
+WORKDIR /root
+
+COPY . /root
+
+RUN pip install requests
+RUN pip install --upgrade pip setuptools wheel
+RUN pip install tqdm
+RUN pip install --upgrade twine
+RUN python setup.py bdist_wheel
+RUN pip install dist/netpay_eccomerce_python-0.1-py2-none-any.whl
+
+
+
+RUN python test.py
+
