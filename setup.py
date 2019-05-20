@@ -2,7 +2,7 @@ import setuptools
 with open("readme.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
-     name='netpay-eccomerce-python',  
+     name='netpay-ecommerce-python',  
      version='0.1',
      author="Netpay",
      author_email="info@netpay.com.mx",

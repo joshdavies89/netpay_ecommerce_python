@@ -9,7 +9,7 @@ Instalacion
 ===============
 
 ```sh
-pip install netpay_ecommerce
+pip install netpay-ecommerce-python
 ```
 
 Uso
