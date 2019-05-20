@@ -1,3 +1,3 @@
 from resources import AuthJwt, TokenCard, RiskManager
 
-BASE_URL= "http://localhost:4030"
+BASE_URL= "https://cert.netpay.com.mx"
