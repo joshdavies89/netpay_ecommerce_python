@@ -1,0 +1,6 @@
+deploy:
+  provider: pypi
+  user: "develope-netpay"
+  password: "EY0!cU67Xr*D4H^vj9^$#9P"
+  on:
+    branch: master
