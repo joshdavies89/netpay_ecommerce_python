@@ -6,7 +6,7 @@ install:
 - pip install tqdm
 - pip install requests
 - python setup.py bdist_wheel
-- pip install dist/netpay_ecommerce_python-1.0.5-py2-none-any.whl
+- pip install dist/netpay_ecommerce_python-1.0.6-py2-none-any.whl
 script:
 - pytest
 deploy:
