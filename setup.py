@@ -1,7 +1,7 @@
 import setuptools
 setuptools.setup(
      name='netpay-ecommerce-python',  
-     version='1.0.4',
+     version='1.0.5',
      author="Netpay",
      author_email="info@netpay.com.mx",
      description="A Python scripts for consume eccomerce Api",
