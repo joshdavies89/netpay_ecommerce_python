@@ -4,6 +4,7 @@ python:
 install:
   - pip install --upgrade pip setuptools wheel
   - pip install tqdm
+  - pip install requests
   - python setup.py bdist_wheel
   - pip install dist/netpay_ecommerce_python-1.0.0-py2-none-any.whl
 script:
