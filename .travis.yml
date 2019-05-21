@@ -1,18 +1,18 @@
 language: python
 python:
-  - "2.7"
+- '2.7'
 install:
-  - pip install --upgrade pip setuptools wheel
-  - pip install tqdm
-  - pip install requests
-  - python setup.py bdist_wheel
-  - pip install dist/netpay_ecommerce_python-1.0.0-py2-none-any.whl
+- pip install --upgrade pip setuptools wheel
+- pip install tqdm
+- pip install requests
+- python setup.py bdist_wheel
+- pip install dist/netpay_ecommerce_python-1.0.0-py2-none-any.whl
 script:
-  - pytest
+- pytest
 deploy:
   provider: pypi
   user: developer-netpay
   password:
-    secure: eNMvftmzinZq3dwpMXNL3E0vLGc2s45dE1lPBsnrWMP4rlTGSkKGuonrjERxorAez8Qqtt/wCb4EAhe4gk3hfaFKKN+2yu0ZFxR1MSzIQ2xJuHnBegk6/xehU4aazPT4fmEhsx54b1xfQJf2eTYMtUMhsl5vQEl6fRE69iNF6h8Zc2YoBjjGfGjtmYaIKi3ZwPo3LzDQnd4BarX153Iq14tWdt/Vj/+Gt+B+bC6/6tSl2lmr8GChfwCEZlXqgUi4tkDum7YMUmUsoe6T5R2F7tVr+G5A7BM3i3LBG4GyJDwYpFH4hBcNkAaZvh1mpJVtEOd7e2ZUukWmPhDOhywuUuE+A2IglahVgN3GAkgEEYsY37uNEEx+iSPivr0YUTNNeJ3H9fUWJqrF4fyIJSiTwPfCRSbXvYBE8cdC+g92ykVPjjeXPOqNaXjCiYFgzYkwKINEXrZ37mz0uQ1I8biVbIodBmR61jy0c4nXJCsLrTw1BXlCp9v4E/yam1Gvl7ydTvl2ruF21ig+35r4kw41LjZ7Bf1ZLhQaxm04Asfmoq++VnvC7jsoQDWkgjOT5bV4EQ9Xmy+xIbbAK9d6nNxnNKiQzVATBYSfq0Oj/8y+fLeGBukwGyeOe7LRHHuhNHXSzDno4yTyb7LhWKdPPpUg5TGqQsa0v0UFySXSIPEXLis=
+    secure: WUBMDCxxkiKG8XlAwVupCDaj7wzGQehJVjUicCf7rtR5JG12iS6RRLEDetiujadaOTR7jBl6yTIgU5U26mlSKR9Gimk53oFUGXO/iNCxF1C4Lvw9lj6A0qS+jAOTJbE6szn/eSJC4Fk9phdvS/wKM1UOnZz8cL6cV/Q5VnZgBcZS1Yn6F/aSG9lJt3j+mmL6NJddTkAqAKTPQD0EpJu4MkcP6Kr3R7BSFN8OgcdCXlW+KM3ObQs1R7g+Wce0y1C1I/NOouWe3oZWfOHXvaxNiskwEgA7lmu6tp9m5RNYWlzYS4VGXXu+lISMfTut3jqbr6QNVULTJ+rxdzV4plKRgrLb7ycr3ZXU9o8f7NdxfQdjweF38oQ9fqWicdEVCcsBuKnltlMt4SEBM00s9seKZ6KK62bYJwmKO+3vdcvpaCAPx1Ic+VMAG4QMsQSOZlV5vN7aQQVh5b4SOO36myIw766z76hywXDU9dE/mKxNt/tb/9R2YXuZXhcGSFLq7Ofaw8T10DyZjS4Jkd/YB4kzntTAnfZtpC8ATCfnS8VE9EXacF6olXdb5kSnwatxws3oAcl5DfR9E/eiW3SJB0vVY5dhYeQ9ecfI2XsACzCG1NNkeGeSJjXUqLcgLWdVvN//Tz1MqwD2bZA2pZLMhavnhaHc+4IJdDkPeiWQ28wE5PY=
   on:
     branch: master
