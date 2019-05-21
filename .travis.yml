@@ -2,7 +2,10 @@ language: python
 python:
   - "2.7"
 install:
-  - pip install netpay-ecommerce-python
+  - pip install --upgrade pip setuptools wheel
+  - pip install tqdm
+  - python setup.py bdist_wheel
+  - pip install dist/netpay_ecommerce_python-1.0.0-py2-none-any.whl
 script:
   - pytest
 deploy:
