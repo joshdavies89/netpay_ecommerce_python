@@ -1,6 +1,17 @@
+language: python
+python:
+  - "2.6"
+  - "2.7"
+  - "3.3"
+  - "3.4"
+  - "3.5"
+  - "3.5-dev"  # 3.5 development branch
+  - "3.6"
+  - "3.6-dev"  # 3.6 development branch
+
 deploy:
   provider: pypi
-  user: develope-netpay
+  user: developer-netpay
   password:
     secure: eNMvftmzinZq3dwpMXNL3E0vLGc2s45dE1lPBsnrWMP4rlTGSkKGuonrjERxorAez8Qqtt/wCb4EAhe4gk3hfaFKKN+2yu0ZFxR1MSzIQ2xJuHnBegk6/xehU4aazPT4fmEhsx54b1xfQJf2eTYMtUMhsl5vQEl6fRE69iNF6h8Zc2YoBjjGfGjtmYaIKi3ZwPo3LzDQnd4BarX153Iq14tWdt/Vj/+Gt+B+bC6/6tSl2lmr8GChfwCEZlXqgUi4tkDum7YMUmUsoe6T5R2F7tVr+G5A7BM3i3LBG4GyJDwYpFH4hBcNkAaZvh1mpJVtEOd7e2ZUukWmPhDOhywuUuE+A2IglahVgN3GAkgEEYsY37uNEEx+iSPivr0YUTNNeJ3H9fUWJqrF4fyIJSiTwPfCRSbXvYBE8cdC+g92ykVPjjeXPOqNaXjCiYFgzYkwKINEXrZ37mz0uQ1I8biVbIodBmR61jy0c4nXJCsLrTw1BXlCp9v4E/yam1Gvl7ydTvl2ruF21ig+35r4kw41LjZ7Bf1ZLhQaxm04Asfmoq++VnvC7jsoQDWkgjOT5bV4EQ9Xmy+xIbbAK9d6nNxnNKiQzVATBYSfq0Oj/8y+fLeGBukwGyeOe7LRHHuhNHXSzDno4yTyb7LhWKdPPpUg5TGqQsa0v0UFySXSIPEXLis=
   on:
