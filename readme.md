@@ -1,4 +1,5 @@
 
+[![Build Status](https://travis-ci.com/netpay-ecommerce/netpay_ecommerce_python.svg?branch=master)](https://travis-ci.com/netpay-ecommerce/netpay_ecommerce_python)
 ![README Cover Image](img/python.png)
 
 # Netpay Ecommerce Python - SDK Python
